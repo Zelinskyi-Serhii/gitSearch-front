@@ -1,0 +1,74 @@
+.extra {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__languages span {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+
+  &__repositories {
+    margin-top: 20px;
+  }
+
+  &__repo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+  }
+
+  &__repo span:first-child {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  &__repo span:not(:first-child) {
+    font-size: 12px;
+    color: #666;
+  }
+
+  &__statistics {
+    margin-bottom: 8px;
+  }
+
+  &__statistics span {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+
+  &__goTop {
+    background-image: url('../../icons/arrowUp.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 14px;
+    bottom: 16px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: cyan;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: red;
+    }
+  }
+}

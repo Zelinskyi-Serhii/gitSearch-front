@@ -1,0 +1,55 @@
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  min-width: 800px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 14px;
+  color: black;
+  background-color: white;
+
+  &__button {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: black;
+    margin-bottom: 16px;
+    background-color: cyan;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: red;
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__created {
+    margin-bottom: 8px;
+  }
+
+  &__totalRepo {
+    margin-bottom: 12px;
+  }
+
+  &__back {
+    position: absolute;
+    background-color: cyan;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    left: 40px;
+    outline: none;
+    color: black;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: red;
+    }
+  }
+}

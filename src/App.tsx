@@ -1,26 +1,66 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import { getUserInformation } from './api/request';
+import { SearchLine } from './components/SearchLine';
+import { UserInformation } from './components/UserInformation';
+import { Loader } from './components/Loader';
 
-function App() {
+import './App.scss';
+import './styles/reset.scss';
+import './styles/normalize.scss';
+
+export const App = () => {
+  const [user, setUser] = useState();
+  const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+
+  const getErrorMessage = (error: string) => {
+    setError(error);
+
+    setTimeout(() => {
+      setError('');
+    }, 2000);
+  };
+
+  const getUser = async (userName: string) => {
+    setIsLoading(true);
+
+    try {
+      const userFromServer = await getUserInformation(`shortInfo/${userName}`);
+
+      setUser(userFromServer);
+    } catch {
+      getErrorMessage('User did not found')
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const closeUserInformation = () => {
+    setUser(undefined)
+  };
+
+  const isSearchLine = !isLoading && !user && !error
+
+  console.log(error);
+  console.log(user);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      {error && (
+        <h1>{error}</h1>
+      )}
+      {isLoading && <Loader />}
+
+      {isSearchLine && (
+        <SearchLine getUser={getUser} />
+      )}
+
+      {user && (
+        <UserInformation
+          user={user}
+          closeUserInformation={closeUserInformation}
+         />
+      )}
     </div>
   );
 }
-
-export default App;

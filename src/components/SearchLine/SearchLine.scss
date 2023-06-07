@@ -1,0 +1,38 @@
+.searchLine {
+  &__title {
+    color: white;
+    margin-bottom: 6px;
+    text-shadow: 5px 5px black;
+  }
+
+  &__input {
+    width: 75%;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 14px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    outline: none;
+
+    &:focus {
+      box-shadow: 0 0 5pt 0.5pt black;
+    }
+  }
+
+  &__button {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: white;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: cyan;
+    }
+
+    &--is-active:hover {
+      background-color: white;
+      cursor: not-allowed;
+    }
+  }
+}
