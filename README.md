@@ -1,3 +1,4 @@
+
 ## Get GitHub User
 
 ### Welcome to gitSearch-front! This is the frontend application for a GitHub user search system. It provides a user-friendly interface to search for GitHub users and view their profiles and repositories.
