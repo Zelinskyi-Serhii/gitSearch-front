@@ -7,13 +7,15 @@
 #### View detailed information about a user, languages statistics, total forks, commits, stars, and when user was created.
 #### You do not need scroll from last repositories, you just can click on button in the bottom of page.
 
+
 ### Instruction
 
-#### Write your GitHub username and click on search button
-#### You will get short information about a user
-#### If you want to see detail information - click on "Get extra information" button
-#### Wait until we find all the information about the user (usualy it takes some minutes)
-#### If you want to find another user - click on Back button
+#### 1.Write your GitHub username and click on search button
+#### 2.You will get short information about a user
+#### 3.If you want to see detail information - click on "Get extra information" button
+#### 4.Wait until we find all the information about the user (usualy it takes some minutes)
+#### 5.If you want to find another user - click on Back button
+
 
 ### How to start
 
