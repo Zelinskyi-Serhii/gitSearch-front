@@ -1,6 +1,41 @@
 .main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
+  font-weight: bold;
   min-height: 100vh;
+  gap: 10px;
+
+  &__history {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  &__history span {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-top: 6px;
+  }
+
+  &__button {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: black;
+    margin-bottom: 16px;
+    background-color: white;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: red;
+    }
+  }
 }

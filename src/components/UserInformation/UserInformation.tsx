@@ -5,8 +5,6 @@ import { getUserInformation } from '../../api/request';
 import { ExtraInformation } from '../ExtraInformation';
 import { Loader } from '../Loader';
 
-// Zelinskyi-Serhii
-
 type Props = {
   user: User,
   closeUserInformation: () => void,

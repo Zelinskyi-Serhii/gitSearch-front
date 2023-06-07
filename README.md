@@ -1,3 +1,4 @@
+
 ## Get GitHub User
 
 ### Welcome to gitSearch-front! This is the frontend application for a GitHub user search system. It provides a user-friendly interface to search for GitHub users and view their profiles and repositories.
@@ -6,6 +7,7 @@
 #### Search for GitHub users by their username.
 #### View detailed information about a user, languages statistics, total forks, commits, stars, and when user was created.
 #### You do not need scroll from last repositories, you just can click on button in the bottom of page.
+#### You can watch your latest 5 requests.
 
 
 ### Instruction
