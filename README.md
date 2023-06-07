@@ -1,46 +1,27 @@
-# Getting Started with Create React App
+## Get GitHub User
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Welcome to gitSearch-front! This is the frontend application for a GitHub user search system. It provides a user-friendly interface to search for GitHub users and view their profiles and repositories.
 
-## Available Scripts
+### Features
+#### Search for GitHub users by their username.
+#### View detailed information about a user, languages statistics, total forks, commits, stars, and when user was created.
+#### You do not need scroll from last repositories, you just can click on button in the bottom of page.
+#### You can watch your latest 5 requests.
 
-In the project directory, you can run:
 
-### `npm start`
+### Instruction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### 1.Write your GitHub username and click on search button
+#### 2.You will get short information about a user
+#### 3.If you want to see detail information - click on "Get extra information" button
+#### 4.Wait until we find all the information about the user (usualy it takes some minutes)
+#### 5.If you want to find another user - click on Back button
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+### How to start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### 1. open GitBush and paste - git clone git clone https://github.com/Zelinskyi-Serhii/gitSearch-front.git
+#### 2. cd cd gitSearch-front
+#### 3. npm install
+#### 4. npm start
+#### 5. open your browser and put link - http://localhost:3000
