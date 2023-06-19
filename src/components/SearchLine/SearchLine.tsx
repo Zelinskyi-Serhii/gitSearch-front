@@ -14,7 +14,7 @@ export const SearchLine: FC<Props> = ({ getUser }) => {
   return (
     <div className="searchLine">
       <h1 className="searchLine__title">
-        Find GitHun information about User
+        Find GitHub information about User
       </h1>
 
       <input

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { getUserInformation } from './api/request';
 import { SearchLine } from './components/SearchLine';
 import { UserInformation } from './components/UserInformation';
@@ -13,8 +13,8 @@ export const App = () => {
   const [user, setUser] = useState();
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [historyStorage, setHistoryStorage] = useState<string[]>();
-  const [isShowHistory, setIsShowHistory] = useState(false);
+  // const [historyStorage, setHistoryStorage] = useState<string[]>();
+  // const [isShowHistory, setIsShowHistory] = useState(false);
 
   const getErrorMessage = (error: string) => {
     setError(error);
@@ -24,15 +24,15 @@ export const App = () => {
     }, 2000);
   };
 
-  useEffect(() => {
-    try {
-      const history = JSON.parse(localStorage.getItem('usersHistory') || '');
+  // useEffect(() => {
+  //   try {
+  //     const history = JSON.parse(localStorage.getItem('usersHistory') || '');
 
-      setHistoryStorage(history)
-    } catch {
-      console.log('history are empty');
-    }
-  }, [user]);
+  //     setHistoryStorage(history)
+  //   } catch {
+  //     console.log('history are empty');
+  //   }
+  // }, [user]);
 
   const getUser = async (userName: string) => {
     setIsLoading(true);
@@ -54,7 +54,7 @@ export const App = () => {
   };
 
   const isSearchLine = !isLoading && !user && !error;
-  const isButton = !user && !isLoading
+  // const isButton = !user && !isLoading
 
   return (
     <div className="main">
@@ -74,25 +74,24 @@ export const App = () => {
          />
       )}
 
-        {isShowHistory && isButton && (
+        {/* {isShowHistory && isButton && (
           <button
             className="main__button"
             onClick={() => setIsShowHistory(false)}
           >
             Hide history
           </button>
-        )}
-        {!isShowHistory && isButton && (
+        )} */}
+        {/* {!isShowHistory && isButton && (
           <button
             className="main__button"
             onClick={() => setIsShowHistory(true)}
           >
             Show history
           </button>
-        )}
+        )} */}
 
-
-        {isShowHistory && !user && (
+        {/* {isShowHistory && !user && (
           <div className="main__history">
             Last 5 you watched:
             {historyStorage?.slice(-5).map(user => (
@@ -101,7 +100,7 @@ export const App = () => {
               </span>
             ))}
           </div>
-        )}
+        )} */}
 
     </div>
   );
